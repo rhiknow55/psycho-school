@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<scenes>
+	<scene name="Beginning" ID="A0">
+		<dialogue endNode="0">
+			<line>Blah blah blah each line can only be so long before it glitches out! line 1!</line>
+			<line>Line two here I come!</line>
+			<line>Three's a crowd, but three times the charm!</line>
+			<line>I wanna skip four, but what for?</line>
+			<line>High five for sticking around to line five!</line>
+			<line>After this line of text, the choices should show up!</line>
+		</dialogue>
+		<options>
+			<option gotoID="B1">Go to Spring additional text to test best fit</option>
+			<option gotoID="B2">Go to Summer</option>
+			<option gotoID="B3">Go to Autumn</option>
+			<option gotoID="B4">Go to Winter</option>
+		</options>
+	</scene>
+	<scene name="Spring" ID="B1">
+		<dialogue endNode="0">
+			<line>This is spring</line>
+		</dialogue>
+		<options>
+			<option gotoID="B2">this option leads to summer</option>
+			<option gotoID="B3">this option leads to summer</option>
+			<option gotoID="B4">this option leads to winter</option>
+			<option gotoID="B5">end</option>
+		</options>
+	</scene>
+	<scene name="Summer" ID="B2">
+		<dialogue endNode="0">
+			<line>This is summer</line>
+		</dialogue>
+		<options>
+			<option gotoID="B1">this option leads to spring</option>
+			<option gotoID="B3">this option leads to autumn</option>
+			<option gotoID="B4">this option leads to winter</option>
+			<option gotoID="B5">end</option>
+		</options>
+	</scene>
+	<scene name="Autumn" ID="B3">
+		<dialogue endNode="0">
+			<line>This is autumn</line>
+		</dialogue>
+		<options>
+			<option gotoID="B1">this option leads to spring</option>
+			<option gotoID="B2">this option leads to summer</option>
+			<option gotoID="B4">this option leads to winter</option>
+			<option gotoID="B5">end</option>
+		</options>
+	</scene>
+	<scene name="Winter" ID="B4">
+		<dialogue endNode="0">
+			<line>This is winter</line>
+		</dialogue>
+		<options>
+			<option gotoID="B1">this option leads to spring</option>
+			<option gotoID="B2">this option leads to summer</option>
+			<option gotoID="B3">this option leads to autumn</option>
+			<option gotoID="B5">end</option>
+		</options>
+	</scene>
+	<scene name="endSample" ID="B5">
+		<dialogue endNode="1">
+			<line>This is the end...</line>
+			<line>something something, count to teeeen...</line>
+			<line>but for real, close textbox and resume game!</line>
+		</dialogue>
+	</scene>
+	<scene name=" " ID="Z0">
+		<dialogue endNode="-1">
+			<line>Would you like to go to scene 2?</line>
+		</dialogue>
+		<gotoScene>1</gotoScene>
+	</scene>
+</scenes>
